@@ -4,7 +4,9 @@ FROM php:8.1-fpm-alpine
 RUN set -eux \
     && apk update \
     && apk add --no-cache \
-        unzip
+        unzip \
+        nodejs \
+        npm
 
 # https://github.com/mlocati/docker-php-extension-installer
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
@@ -17,7 +19,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync \
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
-WORKDIR /var/www/html/
+WORKDIR /app
 
 CMD ["php-fpm"]
 
