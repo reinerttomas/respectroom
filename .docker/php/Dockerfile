@@ -19,7 +19,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync \
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
-WORKDIR /app
+WORKDIR /var/www/html
 
 CMD ["php-fpm"]
 

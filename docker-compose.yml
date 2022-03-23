@@ -7,7 +7,7 @@ services:
       dockerfile: .docker/nginx/Dockerfile
     container_name: respectroom-nginx
     volumes:
-      - ./:/app
+      - ./:/var/www/html
       - .docker/nginx/nginx.conf:/etc/nginx/nginx.conf
       - .docker/nginx/sites/:/etc/nginx/sites-available
       - .docker/nginx/conf.d/:/etc/nginx/conf.d
@@ -27,7 +27,7 @@ services:
     environment:
       TZ: Europe/Prague
     volumes:
-      - ./:/app
+      - ./:/var/www/html
       - .docker/php/conf.d/symfony.dev.ini:/usr/local/etc/php/conf.d/symfony.dev.ini
     depends_on:
       - database
