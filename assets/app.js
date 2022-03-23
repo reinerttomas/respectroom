@@ -5,8 +5,19 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
+// loads the jquery package from node_modules
+import $ from 'jquery';
+
+// import the function from greet.js (the .js extension is optional)
+// ./ (or ../) means to look for a local file
+import greet from './greet';
+
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+$(document).ready(function() {
+    console.log(greet('jill'));
+});
