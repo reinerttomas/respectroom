@@ -7,13 +7,17 @@
 
 // loads the jquery package from node_modules
 import $ from 'jquery';
+import 'bootstrap';
+import './js/mazer';
 
 // import the function from greet.js (the .js extension is optional)
 // ./ (or ../) means to look for a local file
-import greet from './greet';
+import greet from './js/greet';
 
 // any CSS you import will output into a single css file (app.css in this case)
-import 'bootstrap/dist/css/bootstrap.css';
+import './css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './css/app.css';
 
 // start the Stimulus application
 import './bootstrap';
