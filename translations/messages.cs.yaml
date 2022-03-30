@@ -1,0 +1,12 @@
+SIDEBAR:
+    MENU: 'Menu'
+    HOME: 'Domů'
+    USER: 'Uživatel'
+
+PAGE_TITLE:
+    HOME: 'Domů'
+    USER: 'Uživatel'
+
+BREADCRUMB:
+    HOME: 'Domů'
+    USER: 'Uživatel'

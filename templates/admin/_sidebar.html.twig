@@ -3,7 +3,7 @@
         <div class="sidebar-header">
             <div class="d-flex justify-content-between">
                 <div class="logo">
-                    <a href="index.html"><img src="{{ asset('build/images/logo/logo.png') }}" alt="Logo" srcset=""></a>
+                    <a href="{{ url('admin_home') }}"><img src="{{ asset('build/images/logo/logo.png') }}" alt="Logo" srcset=""></a>
                 </div>
                 <div class="toggler">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -12,19 +12,19 @@
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
-                <li class="sidebar-title">Menu</li>
+                <li class="sidebar-title">{{ 'SIDEBAR.MENU'|trans }}</li>
 
                 <li class="sidebar-item">
                     <a href="{{ url('admin_home') }}" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
-                        <span>Dashboard</span>
+                        <span>{{ 'SIDEBAR.HOME'|trans }}</span>
                     </a>
                 </li>
 
                 <li class="sidebar-item">
                     <a href="{{ url('admin_user') }}" class='sidebar-link'>
                         <i class="bi bi-person-fill"></i>
-                        <span>User</span>
+                        <span>{{ 'SIDEBAR.USER'|trans }}</span>
                     </a>
                 </li>
             </ul>
