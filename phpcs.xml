@@ -56,7 +56,7 @@
     <rule ref="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion" />
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants" />
     <rule ref="SlevomatCodingStandard.Classes.ForbiddenPublicProperty" />
-    <!--    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion" />-->
+    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion" />
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding" />
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition" />
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch" />
