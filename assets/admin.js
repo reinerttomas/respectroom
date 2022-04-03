@@ -17,11 +17,11 @@ import greet from './js/greet';
 // any CSS you import will output into a single css file (app.css in this case)
 import './css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './css/app.css';
+import './css/admin.css';
 
 // start the Stimulus application
 import './bootstrap';
 
-$(document).ready(function() {
+$(document).ready(function () {
     console.log(greet('jill'));
 });

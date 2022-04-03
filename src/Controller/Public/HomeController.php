@@ -1,20 +1,20 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller\Admin;
+namespace App\Controller\Public;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/admin/')]
+#[Route('/')]
 class HomeController extends AbstractController
 {
-    #[Route('/', name: 'admin_home', methods: ['GET'])]
+    #[Route('/', name: 'public_home', methods: ['GET'])]
     public function index(): Response
     {
         return $this->render(
-            'admin/home/index.html.twig',
+            'public/home/index.html.twig',
             [
                 'controller_name' => 'HomeController',
             ],
