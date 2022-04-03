@@ -20,6 +20,7 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint" />
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+        <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification" />
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingAnyTypeHint" />
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
@@ -53,10 +54,10 @@
         </properties>
         <exclude-pattern>tests/*</exclude-pattern>
     </rule>
-    <rule ref="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion" />
+<!--    <rule ref="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion" />-->
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants" />
     <rule ref="SlevomatCodingStandard.Classes.ForbiddenPublicProperty" />
-    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion" />
+<!--    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion" />-->
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding" />
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition" />
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch" />
@@ -117,8 +118,8 @@
     <rule ref="SlevomatCodingStandard.Classes.PropertySpacing" />
     <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature" />
     <!--    <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature" />-->
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming" />
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming" />
+<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming" />-->
+<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming" />-->
     <!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming" />-->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousErrorNaming" />
     <!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming" />-->

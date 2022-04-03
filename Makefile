@@ -37,6 +37,9 @@ ccs:
 fcs:
 	@docker exec -e APP_ENV=test -it $(PHP) composer fcs
 
+test-prepare:
+	@docker exec -e APP_ENV=test -it $(PHP) composer test-prepare
+
 test:
 	@docker exec -e APP_ENV=test -it $(PHP) composer test
 

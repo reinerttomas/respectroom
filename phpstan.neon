@@ -25,7 +25,7 @@ parameters:
         container_xml_path: var/cache/test/App_KernelTestDebugContainer.xml
 
     # https://phpstan.org/config-reference#vague-typehints
-    # checkMissingIterableValueType: false
+    checkMissingIterableValueType: false
 
     # It's a special "dev" project, I have to ignore the following warnings because
     # the use of this functions is intended.
@@ -37,6 +37,7 @@ parameters:
         #- '#Should not use function "var_dump", please change the code.#'          # warnings for "var_dump()"
         #- '#Should not use function "phpinfo", please change the code.#'           # warnings for "phpinfo()"
         #- '#Variable method call on#'                                              # dev blog!
+        - '#Method [a-zA-Z0-9\\_]+::[a-zA-Z]+\(\) is unused.#'
 
     # I don't use the Symfony PHPUnit bridge in this project, but if you do, you
     # probably will have to add the following bootstrap file:
