@@ -22,6 +22,14 @@ class UserRepository extends ServiceEntityRepository
     }
 
     /**
+     * @return array<User>
+     */
+    public function list(): array
+    {
+        return $this->findAll();
+    }
+
+    /**
      * @throws NotFoundException
      */
     public function get(int $id): User

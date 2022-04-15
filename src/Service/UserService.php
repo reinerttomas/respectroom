@@ -15,6 +15,14 @@ class UserService
     }
 
     /**
+     * @return array<User>
+     */
+    public function list(): array
+    {
+        return $this->userRepository->list();
+    }
+
+    /**
      * @throws NotFoundException
      */
     public function get(int $id): User

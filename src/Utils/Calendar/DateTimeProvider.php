@@ -9,19 +9,26 @@ use Throwable;
 
 class DateTimeProvider implements DateTimeProviderInterface
 {
-    /**
-     * @throws Throwable
-     */
-    public function create(string $timestamp = 'now'): DateTime
+    private string $timestamp;
+
+    public function __construct(string $timestamp)
     {
-        return new DateTime($timestamp);
+        $this->timestamp = $timestamp;
     }
 
     /**
      * @throws Throwable
      */
-    public function createImmutable(string $timestamp = 'now'): DateTimeImmutable
+    public function create(): DateTime
     {
-        return new DateTimeImmutable($timestamp);
+        return new DateTime($this->timestamp);
+    }
+
+    /**
+     * @throws Throwable
+     */
+    public function createImmutable(): DateTimeImmutable
+    {
+        return new DateTimeImmutable($this->timestamp);
     }
 }

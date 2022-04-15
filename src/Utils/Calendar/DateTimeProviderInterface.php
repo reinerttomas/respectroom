@@ -8,7 +8,7 @@ use DateTimeImmutable;
 
 interface DateTimeProviderInterface
 {
-    public function create(string $timestamp = 'now'): DateTime;
+    public function create(): DateTime;
 
-    public function createImmutable(string $timestamp = 'now'): DateTimeImmutable;
+    public function createImmutable(): DateTimeImmutable;
 }

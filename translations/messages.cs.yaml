@@ -10,3 +10,16 @@ PAGE_TITLE:
 BREADCRUMB:
     HOME: 'Domů'
     USER: 'Uživatel'
+
+DATE:
+    CREATED_AT: 'Vytvořeno'
+    UPDATED_AT: 'Upraveno'
+
+USER:
+    NAME: 'Jméno'
+    SURNAME: 'Přijmení'
+    EMAIL: 'Email'
+    ROLE: 'Role'
+    ROLE_VALUES:
+        ROLE_ADMIN: 'admin'
+        ROLE_USER: 'uživatel'

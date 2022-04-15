@@ -22,3 +22,14 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Utils\Calendar\DateTimeProvider:
+        arguments:
+            - 'now'
+
+when@test:
+    services:
+
+        App\Utils\Calendar\DateTimeProvider:
+            arguments:
+                - '2020-01-01 08:00:00'

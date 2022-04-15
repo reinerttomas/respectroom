@@ -3,38 +3,18 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
 use DateTime;
 use DateTimeImmutable;
-use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: UserRepository::class)]
 class User
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column(type: 'integer')]
     private int $id;
-
-    #[ORM\Column(type: 'string')]
     private string $name;
-
-    #[ORM\Column(type: 'string')]
     private string $surname;
-
-    #[ORM\Column(type: 'string', unique: true)]
     private string $email;
-
-    #[ORM\Column(type: 'string', nullable: true)]
     private ?string $password;
-
-    #[ORM\Column(type: 'json')]
     private array $roles;
-
-    #[ORM\Column(type: 'datetimetz_immutable')]
     private DateTimeImmutable $createdAt;
-
-    #[ORM\Column(type: 'datetimetz', nullable: true)]
     private ?DateTime $updatedAt;
 
     public function __construct(
